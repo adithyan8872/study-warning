@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ml">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ഇതൊന്ന് പഠിയെടാ 😡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Malayalam:wght@700;800;900&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+      padding: 24px;
+      color: #fff;
+      font-family: "Noto Sans Malayalam", sans-serif;
+      background:
+        radial-gradient(ellipse at 50% 45%, rgba(255, 35, 35, .32), transparent 34%),
+        repeating-linear-gradient(135deg, rgba(255,255,255,.035) 0 2px, transparent 2px 13px),
+        linear-gradient(145deg, #080808 0%, #260707 42%, #090909 100%);
+    }
+    body::before, body::after {
+      content: "";
+      position: fixed;
+      inset: 18px;
+      pointer-events: none;
+      border: 3px solid rgba(255, 45, 45, .55);
+      clip-path: polygon(0 0, 18% 0, 18% 1%, 1% 1%, 1% 18%, 0 18%,
+                         0 0, 100% 0, 100% 18%, 99% 18%, 99% 1%, 82% 1%,
+                         82% 0, 100% 0, 100% 100%, 82% 100%, 82% 99%,
+                         99% 99%, 99% 82%, 100% 82%, 100% 100%, 0 100%,
+                         0 82%, 1% 82%, 1% 99%, 18% 99%, 18% 100%);
+      opacity: .8;
+    }
+    main {
+      position: relative;
+      width: min(900px, 100%);
+      min-height: 390px;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      padding: 52px 26px;
+      border: 2px solid rgba(255, 55, 55, .7);
+      border-radius: 8px;
+      background: linear-gradient(155deg, rgba(35, 8, 8, .94), rgba(8, 8, 8, .96));
+      box-shadow: 0 0 24px rgba(255, 0, 0, .35), 0 0 90px rgba(255, 0, 0, .16),
+                  inset 0 0 35px rgba(255, 0, 0, .12);
+    }
+    .warning {
+      margin: 0 0 18px;
+      font-family: system-ui, sans-serif;
+      font-size: clamp(2.5rem, 7vw, 4.5rem);
+      filter: drop-shadow(0 0 18px rgba(255, 25, 25, .8));
+    }
+    h1 {
+      margin: 0;
+      color: #fff1f1;
+      font-size: clamp(2.4rem, 8.5vw, 6.2rem);
+      line-height: 1.55;
+      font-weight: 900;
+      letter-spacing: -.045em;
+      text-shadow: 3px 3px 0 #a00000, 6px 6px 0 #510000,
+                   0 0 16px rgba(255, 25, 25, .85),
+                   0 0 42px rgba(255, 0, 0, .5);
+    }
+    .underline {
+      width: min(260px, 65%);
+      height: 7px;
+      margin: 24px auto 0;
+      border-radius: 2px;
+      background: linear-gradient(90deg, transparent, #ff2424, #fff, #ff2424, transparent);
+      box-shadow: 0 0 18px #ff2424;
+    }
+    .tag {
+      margin-top: 22px;
+      color: #ff6b6b;
+      font: 800 12px/1.4 system-ui, sans-serif;
+      letter-spacing: .28em;
+      text-transform: uppercase;
+    }
+    @media (max-width: 480px) {
+      main { min-height: 330px; padding: 38px 16px; }
+      body::before, body::after { inset: 9px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div>
+      <div class="warning" aria-label="angry face">😡</div>
+      <h1>ഇതൊന്ന് പഠിയെടാ</h1>
+      <div class="underline" aria-hidden="true"></div>
+      <div class="tag">NO MORE EXCUSES · STUDY NOW</div>
+    </div>
+  </main>
+</body>
+</html>
